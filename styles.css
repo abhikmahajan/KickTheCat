@@ -1,0 +1,43 @@
+/* General styling */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Score and heading */
+h1 {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Game container */
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Cat styling (Responsive Size) */
+#cat {
+    position: absolute;
+    width: 10vw; /* Responsive width */
+    max-width: 100px; /* Maximum width */
+    height: auto;
+    cursor: pointer;
+    transition: top 0.5s ease, left 0.5s ease;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    #cat {
+        width: 15vw; /* Slightly bigger on small screens */
+    }
+}
